@@ -6,4 +6,15 @@ const students = [
   { name: "Eve", score: 91 },
 ];
 
-// เริ่มเขียนโค้ดตรงนี้
+const names = students
+
+    .filter(student => student.score > 50)
+    // console.log(names)
+    .map(student => (student.score * (10/100) + student.score));
+    console.log(names)
+
+let add = names.reduce((arr, num) => arr + num, 0);
+console.log(add)
+
+
+
